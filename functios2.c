@@ -34,7 +34,7 @@ int print_pointer(va_list types, char buffer[],
 	while (num_addrs > 0)
 	{
 		buffer[ind--] = map_to[num_addrs % 16];
-		num_addrs /= 16
+		num_addrs /= 16;
 			length++;
 	}
 
@@ -125,7 +125,7 @@ int print_reverse(va_list types, char buffer[],
 		char z = str[i];
 
 		write(1, &z, 1);
-		count++
+		count++;
 	}
 	return (count);
 }
